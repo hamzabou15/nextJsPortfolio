@@ -1,6 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Montserrat", sans-serif!important;
+  font-size: 16px;
+  /* color: rgb(var(--foreground-rgb)); */
+  /* background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb)); */
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -16,14 +28,40 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.Nunito-font {
+  font-family: "Nunito Sans", sans-serif !important;
+}
+
+.rubik-font {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* styles text fonts */
+.text-xl-important {
+  font-size: 16px !important;
+  letter-spacing: 0.3px;
+}
+
+.text-lg-important {
+  font-size: 14px !important;
+  letter-spacing: 0.3px;
+}
+
+.border-transparent-important {
+  border: transparent !important;
+}
+
+.bg-gray-important {
+  background: #9690a240 !important;
+}
+
+.bg-gray-important {
+  background: #9690a240 !important;
+}
+
+.Lato {
+  font-family: 'Lato', sans-serif !important;
 }
 
 @layer utilities {
@@ -31,3 +69,262 @@ body {
     text-wrap: balance;
   }
 }
+
+.menu-link {
+  position: relative;
+}
+
+.menu-link .number {
+  position: absolute;
+  left: -25px;
+}
+
+.menu-link:hover .number {
+  transition: 0.4s ease;
+  opacity: 0;
+  margin-left: 20px;
+}
+
+.menu-link a span {
+  transition: 0.3s ease;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.menu-link a .closed {
+  transition: 0.3s ease;
+  -webkit-text-stroke: 2px white;
+  /* Contour blanc de 2 pixels pour les navigateurs WebKit (Chrome, Safari) */
+  color: transparent !important;
+  /* Couleur transparente pour le texte */
+}
+
+.menu-link:hover a :first-child {
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+.menu-link a:hover {
+  color: #f1c453 !important;
+  transition: 0.4s ease;
+}
+
+.menu-link a:hover .closed {
+  transition: 0.4s ease;
+  -webkit-text-stroke: 2px #f1c453;
+}
+
+.menu-link:hover a .closed {
+  transform: translateY(0%) !important;
+  opacity: 1;
+  transition: 0.4s ease;
+
+}
+
+.global-secondary-font {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.scale-icon:hover {
+  transition: 0.3s ease-in-out;
+  transform: scale(1.05);
+}
+
+
+/* style for border of mil another CSS file */
+.animated-border {
+  position: relative;
+  display: inline-block;
+}
+
+.animated-border::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #f1c453;
+  transition: width 0.4s cubic-bezier(.645, .045, .355, 1);
+}
+
+.animated-border:hover::after {
+  width: 100%;
+}
+
+
+/* swiper */
+.swiper {
+  width: 100%;
+  height: 60%;
+  position: relative;
+}
+
+@media screen and (max-width:768px) {
+  .swiper {
+    height: 100%;
+  }
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.bg-gradient-custom {
+  background: linear-gradient(270deg, rgba(17, 16, 19, 0.95) 0%, rgba(17, 16, 19, 0) 100%), url("https://dba.ma/wp-content/uploads/2022/04/accessmarket.jpg");
+}
+
+.transform-3d {
+  will-change: transform;
+  transform: perspective(6000px) rotateX(0deg) rotateY(0deg);
+}
+
+.transform-3d:hover {
+  transform: perspective(6000px) rotateX(9deg) rotateY(9deg);
+  /* Adjust these values as needed */
+}
+
+
+.Link-project .chevron {
+  transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.Link-project:hover {
+  color: #ffffffd0 !important;
+}
+
+.Link-project:hover .chevron {
+  Animation: iconMove ease-out 0.4s;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: fixed !important;
+  bottom: 60px !important;
+  left: auto !important;
+  margin: auto !important;
+  top: auto !important;
+  /* margin-top: 50px!important; */
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 15px !important;
+  color: white !important;
+}
+
+.swiper-button-prev {
+  right: 100px !important;
+}
+
+.swiper-button-next {
+  right: 50px !important;
+}
+
+@media screen and (max-width: 768px) {
+
+  .swiper-button-prev {
+    right: auto !important;
+    left: 20px!important;
+    bottom: 90px!important;
+  }
+
+  .swiper-button-next {
+    right: auto !important;
+    left: 70px!important;
+    bottom: 90px!important;
+  }
+}
+
+.swiper-pagination {
+  position: fixed !important;
+  bottom: 60px !important;
+}
+
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.556) !important;
+}
+
+.swiper-pagination-bullet-active {
+  /* margin-top: 30px!important; */
+  background: white !important;
+}
+
+.swiper-slide-active .slide_up_element {
+  animation: slide_up_element 2s ease;
+}
+
+.elementor-blockquote::before  {
+  content: "“";
+  font-size: 100px;
+  color: #f9fafa;
+  font-family: Times New Roman, Times, serif;
+  font-weight: 900;
+  line-height: 1;
+  display: block;
+  height: .6em;
+}
+.scroll-br::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.scroll-br::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(230, 225, 211); 
+  border-radius: 6px;
+}
+ 
+/* Handle */
+.scroll-br::-webkit-scrollbar-thumb {
+  background: rgb(255, 255, 255); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+
+
+@keyframes slide_up_element {
+  0% {
+    transform: translateY(3.25rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes iconMove {
+  0% {
+    transform: translateX(0);
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  31% {
+    transform: translateX(1.25rem);
+  }
+
+  32% {
+    transform: translateX(-1.25rem);
+  }
+
+  84% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
