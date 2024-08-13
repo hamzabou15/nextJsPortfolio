@@ -2,7 +2,9 @@
 import React, { useState } from 'react'
 import { Button } from '../sources';
 import { TbChevronDownRight } from 'react-icons/tb';
-import Workshop2 from '../../../public/imgs/workshop.jpg';
+import minimalist from '../../../public/imgs/minimalist.jpg';
+import Workshop2 from '../../../public/imgs/Workshop.jpg';
+
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 
@@ -64,7 +66,7 @@ export default function Process() {
                 </div>
 
                 <div className='w-[40%] z-[-1] h-[570px]  relative overflow-hidden max-lg:w-full max-md:gap-12 '>
-                    <iframe
+                    {/* <iframe
                         className='absolute top-0 left-0 z-[-1]'
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -74,7 +76,9 @@ export default function Process() {
                         height="700"
                         src="https://www.youtube.com/embed/kql-gJPxh2k?controls=0&amp;rel=0&amp;playsinline=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fdba.ma&amp;widgetid=1&amp;autoplay=1&amp;modestbranding=1&amp;showinfo=0"
                         style={{ width: '1139.56px', height: '641px', zIndex: '-1' }}>
-                    </iframe>
+                    </iframe> */}
+                    <Image className='w-full h-full object-cover' src={minimalist} alt="Workshop" />
+
                 </div>
             </div>
             <div className='flex justify-between gap-8 w-full max-lg:flex-col-reverse ' >

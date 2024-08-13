@@ -19,9 +19,9 @@ const Index: React.FC = () => {
 
   return (
     <div >
-      {/* <Back />
+      <Back />
       <Contact />
-      <Social /> */}
+      <Social />
     </div>
   );
 };
