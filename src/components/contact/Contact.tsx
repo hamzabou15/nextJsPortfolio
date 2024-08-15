@@ -1,5 +1,4 @@
-"use client"
-import { MapContainer, TileLayer, Marker, Popup, LayersControl } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup, LayersControl, LayerGroup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import { useEffect } from 'react';
@@ -9,16 +8,14 @@ import { TbChevronDownRight } from 'react-icons/tb';
 import { useRouter } from 'next/navigation';
 
 export const Contact = () => {
-
-  useEffect(() => {
-    // Fix for missing marker icons
-    L.Icon.Default.mergeOptions({
-      iconRetinaUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon-2x.png',
-      iconUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png',
-      shadowUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png',
-    });
-  }, []);
-  const { BaseLayer } = LayersControl;
+  // useEffect(() => {
+  //   // Fix for missing marker icons
+  //   L.Icon.Default.mergeOptions({
+  //     iconRetinaUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon-2x.png',
+  //     iconUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png',
+  //     shadowUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png',
+  //   });
+  // }, []);
 
   const position: [number, number] = [34.020882, -6.841650]; // Coordinates of Rabat
 
@@ -27,8 +24,8 @@ export const Contact = () => {
   const handleClick = () => {
     router.push('/estimate')
   };
-  return (
 
+  return (
     <div className="flex  items-center justify-center flex-col gap-14  bg-[#161519] py-12 ">
       <div className='w-full max-w-[1140px] flex justify-center flex-col gap-20 ' >
         <div className='w-full flex justify-center items-center mt-16' >
@@ -36,25 +33,25 @@ export const Contact = () => {
         </div>
         <div className='w-full h-auto flex gap-11 max-lg:flex-col' >
           <div className='flex-1 z-20 relative'>
-            <MapContainer center={position} zoom={33} style={{ height: '400px', width: '100%' }}>
-              <LayersControl position="topright">
-                <BaseLayer checked name="OpenStreetMap">
+            {/* <MapContainer center={position} zoom={33} style={{ height: '400px', width: '100%' }}> */}
+              {/* <LayersControl position="topright">
+                <LayerGroup >
                   <TileLayer
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                   />
-                </BaseLayer>
-                <BaseLayer name="Satellite">
+                </LayerGroup>
+                <LayerGroup>
                   <TileLayer
                     url="https://api.mapbox.com/styles/v1/mapbox/satellite-v9/tiles/256/{z}/{x}/{y}@2x?access_token=YOUR_MAPBOX_ACCESS_TOKEN"
                     attribution='Imagery © <a href="https://www.mapbox.com/about/maps/">Mapbox</a>'
                   />
-                </BaseLayer>
+                </LayerGroup>
               </LayersControl>
               <Marker position={position}>
                 <Popup>Rabat, Morocco</Popup>
-              </Marker>
-            </MapContainer>
+              </Marker> */}
+            {/* </MapContainer> */}
           </div>
           <div className='flex-1 flex flex-col gap-5 max-lg:px-5'>
             <div className=' w-16 h-16 text-white flex justify-center items-center border border-white rounded-full'>

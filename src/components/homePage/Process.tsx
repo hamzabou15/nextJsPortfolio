@@ -5,6 +5,7 @@ import { TbChevronDownRight } from 'react-icons/tb';
 import minimalist from '../../../public/imgs/minimalist.jpg';
 import Workshop2 from '../../../public/imgs/Workshop.jpg';
 
+
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 
