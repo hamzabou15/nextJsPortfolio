@@ -42,7 +42,7 @@ export const Progress = () => {
       };
 
     return (
-        <div className={` ${scroll <  90 ? "opacity-0" : "opacity-100 ease-in duration-[0.3s] " } fixed left-0 z-50 top-1/2 transform -translate-y-1/2 gap-7 
+        <div className={` ${scroll <  90 ? "opacity-0" : "opacity-100 ease-in duration-[0.3s] " } mix-blend-difference fixed left-0 z-50 top-1/2 transform -translate-y-1/2 gap-7 
                         cursor-pointer text-white flex flex-col-reverse items-center 
                         max-md:hidden transition `}
               onClick={scrollToTop}          
