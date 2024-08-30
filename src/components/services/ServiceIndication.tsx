@@ -17,7 +17,7 @@ export default function ServiceIndication() {
                 <div className='flex w-full gap-16 max-md:flex-col'>
                     <div className='flex-1 flex flex-col gap-[20px] max-md:gap-10 '>
                         <img src="https://dba.ma/wp-content/uploads/2022/06/dba_office_wireframing-500x500.jpg" alt=""
-                            className='hover:filter hover:grayscale transition ease-in duration-[0.3s] '
+                            className='hover:filter hover:grayscale transition ease-in duration-[0.3s] max-md:h-96 md:h-72 xl:h-80 object-cover '
                         />
                         <div className='mb-[16px] max-md:mb-0'>
                             <span className='text-[25px] font-medium uppercase leading-7 '>01. User experience</span>
@@ -30,7 +30,7 @@ export default function ServiceIndication() {
                     </div>
                     <div className='flex-1 flex flex-col gap-[20px] max-md:gap-9 '>
                         <img src="/imgs/design.jpg" alt="" 
-                            className='hover:filter hover:grayscale transition ease-in duration-[0.3s] '
+                            className=' hover:filter hover:grayscale transition ease-in duration-[0.3s] max-md:h-96 md:h-72 xl:h-80 object-cover'
                         />
                         <div className='mb-[16px] max-md:mb-0'>
                             <span className='text-[25px] font-medium uppercase leading-7'>02. DESIGN </span>
@@ -44,7 +44,7 @@ export default function ServiceIndication() {
                     </div>
                     <div className='flex-1 flex flex-col gap-[20px] max-md:gap-9 '>
                         <img src="/imgs/coding.jpg" alt="" 
-                            className='hover:filter hover:grayscale transition ease-in duration-[0.3s] '
+                            className='hover:filter hover:grayscale transition ease-in duration-[0.3s] max-md:h-96 md:h-72 xl:h-80 object-cover '
                         />
                         <div className='mb-[16px] max-md:mb-0'>
                             <span className='text-[25px] font-medium uppercase leading-7'>03. CODING</span>
