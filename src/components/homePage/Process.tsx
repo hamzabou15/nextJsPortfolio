@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 import { Button } from '../sources';
 import { TbChevronDownRight } from 'react-icons/tb';
 import minimalist from '../../../public/imgs/minimalist.jpg';
-import Workshop2 from '../../../public/imgs/Workshop.jpg';
 
 
 import Image from 'next/image';
@@ -84,7 +83,7 @@ export default function Process() {
             </div>
             <div className='flex justify-between gap-8 w-full max-lg:flex-col-reverse ' >
                 <div className='w-[43%] h-[570px] max-lg:w-[100%]'>
-                    <Image className='w-full h-full object-cover' src={Workshop2} alt="Workshop" />
+                    <Image className='w-full h-full object-cover' src={"../../../public/imgs/Workshop.jpg"} alt="Workshop" />
                     {/* <Workshop style={{objectFit:"contain"}} width={"inherit"} height={"inherit"}  /> */}
                 </div>
                 <div className='w-[50%] h-auto flex flex-col justify-center gap-24 max-lg:w-[100%] max-lg:gap-10'>
