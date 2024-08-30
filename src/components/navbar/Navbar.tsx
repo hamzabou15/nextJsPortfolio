@@ -196,7 +196,7 @@ export const Navbar = () => {
                 >
                     <div className="flex flex-col gap-12 py-24 px-7">
                         <ul className="flex flex-col gap-10 " >
-                            <li onClick={() => { setShowMenuMobile(false)}}  >
+                            <li onClick={(event) => {  event.stopPropagation() ,  setShowMenuMobile(false) , setSelectedLink("/")}}  >
                                 <div className="flex justify-start gap-2">
                                     <Link prefetch={true} href={"/"} className={` relative leading-[1] overflow-hidden flex flex-col text-lg w-full ${selectedLink ? (pathname == "/" ? "text-[#f1c453]" : "text-white") : "text-[#f1c453]"} `}>
                                         <span className=" leading-[1] font-medium" >Home</span>
@@ -204,21 +204,21 @@ export const Navbar = () => {
                                 </div>
 
                             </li>
-                            <li onClick={() => { setShowMenuMobile(false), setSelectedLink("works") }}  >
+                            <li onClick={(event) => {  event.stopPropagation() ,  setShowMenuMobile(false), setSelectedLink("works") }}  >
                                 <div className="flex justify-start gap-2">
                                     <Link prefetch={true} href={"/works"} className={` relative leading-[1] overflow-hidden flex flex-col text-lg w-full ${pathname == "/works" ? "text-[#f1c453]" : "text-white"}  `}>
                                         <span className=" leading-[1] font-medium" >works</span>
                                     </Link>
                                 </div>
                             </li>
-                            <li onClick={() => { setShowMenuMobile(false), setSelectedLink("services") }}  >
+                            <li onClick={(event) => {  event.stopPropagation() ,  setShowMenuMobile(false), setSelectedLink("services") }}  >
                                 <div className="flex justify-start gap-2">
                                     <Link prefetch={true} href={"/services"} className={` relative leading-[1] overflow-hidden flex flex-col text-lg w-full ${pathname == "/services" ? "text-[#f1c453]" : "text-white"}  `}>
                                         <span className=" leading-[1] font-medium" >services</span>
                                     </Link>
                                 </div>
                             </li>
-                            <li onClick={() => { setShowMenuMobile(false), setSelectedLink("contact") }}  >
+                            <li onClick={(event) => {  event.stopPropagation() ,  setShowMenuMobile(false), setSelectedLink("contact") }}  >
                                 <div className="flex justify-start gap-2">
                                     <Link prefetch={true} href={"/contact"} className={` relative leading-[1] overflow-hidden flex flex-col text-lg w-full ${pathname == "/contact" ? "text-[#f1c453]" : "text-white"}  `}>
                                         <span className=" leading-[1] font-medium" >contact</span>
