@@ -14,8 +14,8 @@ export default function ServiceHero() {
                 <div className='flex flex-col justify-center items-center text-[46px] 
                                 tracking-[-2px] leading-[50px] font-bold max-lg:text-[36px]
                                 max-lg:leading-10 max-md:tracking-tight max-md:leading-normal max-md:text-[22px] text-center'>
-                    <h2>Let’s bring your vision to life together.</h2>
-                    <h2>A dedicated team will share your dream.</h2>
+                    <h2 className='slide_up_element'>Let’s bring your vision to life together.</h2>
+                    <h2 className='slide_up_element'>A dedicated team will share your dream.</h2>
                 </div>
                 <div className='flex gap-3 w-full max-md:flex-col max-md:gap-14' >
                     <div
