@@ -196,7 +196,7 @@ export const Navbar = () => {
                 >
                     <div className="flex flex-col gap-12 py-24 px-7">
                         <ul className="flex flex-col gap-10 " >
-                            <li onClick={() => { setShowMenuMobile(false), setSelectedLink("/") }}  >
+                            <li onClick={() => { setShowMenuMobile(false)}}  >
                                 <div className="flex justify-start gap-2">
                                     <Link prefetch={true} href={"/"} className={` relative leading-[1] overflow-hidden flex flex-col text-lg w-full ${selectedLink ? (pathname == "/" ? "text-[#f1c453]" : "text-white") : "text-[#f1c453]"} `}>
                                         <span className=" leading-[1] font-medium" >Home</span>

@@ -234,13 +234,13 @@ body {
   .swiper-button-prev {
     right: auto !important;
     left: 20px!important;
-    bottom: 90px!important;
+    bottom: 60px!important;
   }
 
   .swiper-button-next {
     right: auto !important;
     left: 70px!important;
-    bottom: 90px!important;
+    bottom: 60px!important;
   }
 }
 
