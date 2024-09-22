@@ -42,10 +42,9 @@ export const Works = () => {
             <div className='fixed z-[200] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col gap-9  text-white 2xl:gap-5 
                 max-md:translate-x-[none] max-md:left-0 max-md:ml-[20px] max-md:gap-7 max-md:max-w-[90%]
               '>
-              <h3 className='slide_up_element text-[64px] tracking-[-1px] leading-[64px] 2xl:text-[78px] font-bold max-w-[350px]  '>
+              <h3 className='slide_up_element text-[64px] tracking-[-1px] leading-[64px] 2xl:text-[78px] font-bold max-w-[350px]  max-sm:text-[50px] max-sm:max-w-[300px]  '>
                 {project.title}
               </h3>
-              {/* je veux quand je click ici le num 1 dans les oneProject recois activeWork == true */}
               <button
                 className='slide_up_element Link-project flex items-center gap-1 text-lg font-bold 2xl:text-xl 
                w-[max-content] rounded-md p-[6px] hover:bg-[#80808016] '
