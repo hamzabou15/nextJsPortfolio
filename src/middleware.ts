@@ -2,16 +2,19 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
 export function middleware(request: NextRequest) {
-  // Check if the requested URL exists, otherwise redirect to home
   const { pathname } = request.nextUrl;
-  if (pathname !== '/' && pathname !== '/other-existing-path') {
+
+  // Liste des chemins valides que tu veux autoriser
+  const validPaths = ['/', '/about', '/contact', '/estimate', '/services', '/works'];
+
+  // Rediriger vers la page d'accueil si le chemin n'est pas valide
+  if (!validPaths.includes(pathname)) {
     return NextResponse.redirect(new URL('/', request.url));
   }
 
   return NextResponse.next();
 }
 
-// Specify the paths where middleware should be applied
 export const config = {
-  matcher: ['/((?!api|_next|static|favicon.ico).*)'], // Apply middleware to all paths except certain ones
+  matcher: '/((?!api|_next/static|_next/image|favicon.ico|logo.png|assets/|imgs/).*)',
 };
