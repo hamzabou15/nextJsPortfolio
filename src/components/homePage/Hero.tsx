@@ -23,7 +23,10 @@ export default function Hero() {
             data-aos="fade-up"
             data-aos-duration="600"
           >I create premium custom web and design solutions</h2>
-          <div className='text-[#ffffffbf] text-base tracking-widest '> <p className='font-light max-lg:max-w-[700px]' > Hire a dedicated skilled developer to develop and design your <span className='font-bold text-[#f1c453] '> custom software</span> or <span className='font-bold  text-[#f1c453]'>website</span> </p> </div>
+          <div className='text-[#ffffffbf] text-base tracking-widest '> <p className='font-light max-lg:max-w-[700px]'
+            data-aos="fade-up"
+            data-aos-duration="600"
+          > Hire a dedicated skilled developer to develop and design your <span className='font-bold text-[#f1c453] '> custom software</span> or <span className='font-bold  text-[#f1c453]'>website</span> </p> </div>
           <Button
             onClick={handleClick}
             text="See what I do"
