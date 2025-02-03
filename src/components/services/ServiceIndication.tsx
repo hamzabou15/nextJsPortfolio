@@ -42,19 +42,19 @@ export default function ServiceIndication() {
                     <div className='flex-1 flex flex-col gap-[20px] max-md:gap-9 '>
                         <img src="/imgs/design.jpg" alt=""
                         data-aos="fade-up"
-                            data-aos-duration="600"
+                            data-aos-duration="700"
                             className=' hover:filter hover:grayscale transition ease-in duration-[0.3s] max-md:h-96 md:h-72 xl:h-80 object-cover'
                         />
                         <div className='mb-[16px] max-md:mb-0'>
                             <span className='text-[25px] font-medium uppercase leading-7'
                             data-aos="fade-up"
-                            data-aos-duration="600"
+                            data-aos-duration="700"
                             >02. DESIGN </span>
                         </div>
                         <div>
                             <p className='text-base leading-[25px]'
                             data-aos="fade-up"
-                            data-aos-duration="600"
+                            data-aos-duration="700"
                             >Time to go to the drawing board and translate
                                 the strategic basis of the project into something visual and more expressive. It’s a way to
                                 push the conversation forward and really tailor everything.
@@ -64,19 +64,19 @@ export default function ServiceIndication() {
                     <div className='flex-1 flex flex-col gap-[20px] max-md:gap-9 '>
                         <img src="/imgs/coding.jpg" alt=""
                         data-aos="fade-up"
-                            data-aos-duration="700"
+                            data-aos-duration="900"
                             className='hover:filter hover:grayscale transition ease-in duration-[0.3s] max-md:h-96 md:h-72 xl:h-80 object-cover '
                         />
                         <div className='mb-[16px] max-md:mb-0'>
                             <span className='text-[25px] font-medium uppercase leading-7'
                             data-aos="fade-up"
-                            data-aos-duration="700"
+                            data-aos-duration="900"
                             >03. CODING</span>
                         </div>
                         <div>
                             <p className='text-base leading-[25px]'
                             data-aos="fade-up"
-                            data-aos-duration="700"
+                            data-aos-duration="900"
                             >I will build your custom software from the ground up
                                 with the needs of your business and your users at its core.
                                 I will implement my in-house strong process to ensure your software project runs smoothly.</p>
