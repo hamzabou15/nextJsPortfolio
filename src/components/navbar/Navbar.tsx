@@ -49,7 +49,7 @@ export const Navbar = () => {
         setShowMenuMobile(!showMenuMobile);
     };
 
- 
+
 
     useEffect(() => {
         // Fonction pour mettre à jour la taille de la fenêtre
@@ -71,7 +71,7 @@ export const Navbar = () => {
 
     const router = useRouter();
 
-    
+
 
     return (
         <div >
@@ -99,7 +99,7 @@ export const Navbar = () => {
                     </Link>
                 </div>
                 <div className="flex items-center gap-4">
-                    <Button onClick={() =>    router.push('/estimate') } text="GET AN ESTIMATE " size={windowSize.width && windowSize.width > 1536 ? "medium" : "small"} variant='outlined' className='font-bold cursor-pointer transition duration-300 ease-in hover:bg-[#efea5a]   ' />
+                    <Button onClick={() => router.push('/estimate')} text="GET AN ESTIMATE " size={windowSize.width && windowSize.width > 1536 ? "medium" : "small"} variant='outlined' className='font-bold cursor-pointer transition duration-300 ease-in hover:bg-[#efea5a]   ' />
                     <div onClick={handleClickMobile} className={`p-1 ${scroll ? "scale-[0.85]" : "scale-100"} bg-[#67666644] rounded-full transition-all cursor-pointer hidden  max-md:flex `} >
                         <MenuIcon className={`text-[white] hover:transform hover:scale-105`} />
                     </div>
@@ -196,7 +196,7 @@ export const Navbar = () => {
                 >
                     <div className="flex flex-col gap-12 py-24 px-7">
                         <ul className="flex flex-col gap-10 " >
-                            <li onClick={(event) => {  event.stopPropagation() ,  setShowMenuMobile(false) , setSelectedLink("/")}}  >
+                            <li onClick={(event) => { event.stopPropagation(), setShowMenuMobile(false), setSelectedLink("/") }}  >
                                 <div className="flex justify-start gap-2">
                                     <Link prefetch={true} href={"/"} className={` relative leading-[1] overflow-hidden flex flex-col text-lg w-full ${selectedLink ? (pathname == "/" ? "text-[#f1c453]" : "text-white") : "text-[#f1c453]"} `}>
                                         <span className=" leading-[1] font-medium" >Home</span>
@@ -204,21 +204,21 @@ export const Navbar = () => {
                                 </div>
 
                             </li>
-                            <li onClick={(event) => {  event.stopPropagation() ,  setShowMenuMobile(false), setSelectedLink("works") }}  >
+                            <li onClick={(event) => { event.stopPropagation(), setShowMenuMobile(false), setSelectedLink("works") }}  >
                                 <div className="flex justify-start gap-2">
                                     <Link prefetch={true} href={"/works"} className={` relative leading-[1] overflow-hidden flex flex-col text-lg w-full ${pathname == "/works" ? "text-[#f1c453]" : "text-white"}  `}>
                                         <span className=" leading-[1] font-medium" >works</span>
                                     </Link>
                                 </div>
                             </li>
-                            <li onClick={(event) => {  event.stopPropagation() ,  setShowMenuMobile(false), setSelectedLink("services") }}  >
+                            <li onClick={(event) => { event.stopPropagation(), setShowMenuMobile(false), setSelectedLink("services") }}  >
                                 <div className="flex justify-start gap-2">
                                     <Link prefetch={true} href={"/services"} className={` relative leading-[1] overflow-hidden flex flex-col text-lg w-full ${pathname == "/services" ? "text-[#f1c453]" : "text-white"}  `}>
                                         <span className=" leading-[1] font-medium" >services</span>
                                     </Link>
                                 </div>
                             </li>
-                            <li onClick={(event) => {  event.stopPropagation() ,  setShowMenuMobile(false), setSelectedLink("contact") }}  >
+                            <li onClick={(event) => { event.stopPropagation(), setShowMenuMobile(false), setSelectedLink("contact") }}  >
                                 <div className="flex justify-start gap-2">
                                     <Link prefetch={true} href={"/contact"} className={` relative leading-[1] overflow-hidden flex flex-col text-lg w-full ${pathname == "/contact" ? "text-[#f1c453]" : "text-white"}  `}>
                                         <span className=" leading-[1] font-medium" >contact</span>

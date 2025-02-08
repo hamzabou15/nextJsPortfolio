@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 
 export default function ServiceIndication() {
+
     return (
         <div className='w-full h-full min-h-[100vh] bg-[#fffff] relative'>
             <div className=' text-black m-auto h-full flex flex-col gap-7 items-center px-[30px] py-[72px] lg:max-w-[1140px] ' >
@@ -19,6 +20,7 @@ export default function ServiceIndication() {
                 </div>
                 <div className='flex w-full gap-16 max-md:flex-col'>
                     <div className='flex-1 flex flex-col gap-[20px] max-md:gap-10 '>
+                        {/* img for Dba */}
                         <img src="https://dba.ma/wp-content/uploads/2022/06/dba_office_wireframing-500x500.jpg" alt=""
                             data-aos="fade-up"
                             data-aos-duration="500"
@@ -40,6 +42,7 @@ export default function ServiceIndication() {
                         </div>
                     </div>
                     <div className='flex-1 flex flex-col gap-[20px] max-md:gap-9 '>
+                        {/* img for design */}
                         <img src="/imgs/design.jpg" alt=""
                         data-aos="fade-up"
                             data-aos-duration="700"
@@ -55,13 +58,14 @@ export default function ServiceIndication() {
                             <p className='text-base leading-[25px]'
                             data-aos="fade-up"
                             data-aos-duration="700"
-                            >Time to go to the drawing board and translate
+                            >   Time to go to the drawing board and translate
                                 the strategic basis of the project into something visual and more expressive. It’s a way to
                                 push the conversation forward and really tailor everything.
                             </p>
                         </div>
                     </div>
                     <div className='flex-1 flex flex-col gap-[20px] max-md:gap-9 '>
+                        {/* img for coding */}
                         <img src="/imgs/coding.jpg" alt=""
                         data-aos="fade-up"
                             data-aos-duration="900"
@@ -77,9 +81,12 @@ export default function ServiceIndication() {
                             <p className='text-base leading-[25px]'
                             data-aos="fade-up"
                             data-aos-duration="900"
-                            >I will build your custom software from the ground up
+                            >
+                                I will build your custom software from the ground up
                                 with the needs of your business and your users at its core.
-                                I will implement my in-house strong process to ensure your software project runs smoothly.</p>
+                                I will implement my in-house strong process to ensure your 
+                                software project runs smoothly.
+                            </p>
                         </div>
                     </div>
                 </div>
